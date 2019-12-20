@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns="http://internalXslt/data">
+  <!-- ## AIM: define Style, map "class CSS" to "XSL-FO attribut's" -->
+  <!-- ## Syntaxe:
+<map xmlns="http://internalXslt/data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://internalXslt/data class2fo.xsd">
+  <e{entry} k={key or class.name} h={html name} c={contexte: parent, ...} m={media:display|print}>
+    <att n={attribute-name} v={attribute-value} />
+  </>
+
+-->
+  <!-- ## DOJO like  -->
+  <!-- ## PISE like  -->
+
+  <!-- ## COLOR  -->
+  <e k="coGrey">
+    <att n="color" v="#808080"/>
+    <att n="background-color" v="white"/>
+  </e>
+
+  <e k="coLink">
+    <att n="color" v="rgb(192,32,25)"/>
+    <att n="background-color" v="white"/>
+  </e>
+
+  <!-- ## BOOTSTRAP like  -->
+  <e k="mt">
+    <att n="margin-top" v="1em"/>
+  </e>
+  <e k="mt2">
+    <att n="margin-top" v="2em"/>
+  </e>
+  <e k="ml">
+    <att n="margin-left" v="1em"/>
+  </e>
+  <e k="ml2">
+    <att n="margin-left" v="2em"/>
+  </e>
+
+  <e k="font-weight-bold" h="b">
+    <att n="font-weight" v="700"/>
+  </e>
+  <e k="text-decoration-underline" h="u">
+    <att n="text-decoration" v="underline"/>
+  </e>
+  <e k="text-decoration-none" h="u">
+    <att n="text-decoration" v=""/>
+  </e>
+
+  <e k="font-italic" h="i" c="">
+    <att n="font-style" v="italic"/>
+  </e>
+
+  <e k="sup" h="sup" c="">
+    <att n="vertical-align" v="super"/>
+    <att n="font-size" v="75%"/>
+  </e>
+
+  <e k="sub" h="sub" c="">
+    <att n="vertical-align" v="sub"/>
+    <att n="font-size" v="75%"/>
+  </e>
+
+  <!-- ## modele -->
+  <e k="yes" h="" c="" >
+    <att n="" v="yes"/>
+  </e>
+
+</map>
